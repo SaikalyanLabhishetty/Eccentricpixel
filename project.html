@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="e_logo.png">
+    <title>Project</title>
+    <!-- <link rel="stylesheet" href="/css/project_styles.css"> -->
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+/* Nav - bar */
+.Nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    font-family: 'DM Sans', sans-serif;
+    height: 100px;
+}
+.Nav-bar ul{
+    list-style-type: none;
+    overflow: hidden;
+    font-size: 25px;
+}
+.Nav-bar li {
+    float: left;
+  }
+  
+.Nav-bar li a {
+    color: white;
+    padding: 55px 20px;
+    text-decoration: none;
+}
+
+/* buttons */
+#myBtnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    margin: 5px;
+    background-color: #007BFF;
+    cursor: pointer;
+}
+  
+.btn:hover {
+    background-color: #ddd;
+}
+  
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+/* gallary */
+.row {
+    margin: 10px -16px;
+    overflow-x: hidden; /* Hide horizontal scroll */
+    overflow-y: hidden;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+</style>
+<body>
+    <div class="Nav-bar">
+        <ul>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="index.html">
+              <img src="e_logo.png" height="50px">
+              </a>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="myBtnContainer">
+      <button class="btn" onclick="filterSelection('Logos')"> Logos</button>
+      <button class="btn" onclick="filterSelection('blogs')"> Blogs</button>
+      <button class="btn" onclick="filterSelection('vectors')"> Vectors</button>
+    </div>
+    <hr>
+  
+    <div class="row">
+        <div class="column Logos">
+          <div class="content">
+            <img src="alpha.-3png.png" alt="Logo" style="width:100%">
+            <h4>alpha Academy</h4>
+            <p>client requirement</p>
+          </div>
+        </div>
+        <div class="column Logos">
+          <div class="content">
+          <img src="kidzcode3.jpg" alt="Logo" style="width:100%">
+            <h4>kidzcode</h4>
+            <p>client requirement</p>
+          </div>
+        </div>
+        <div class="column Logos">
+          <div class="content">
+          <img src="raymond-logo-re-design.png" alt="Logo" style="width:100%">
+            <h4>Raymond Redesign logo</h4>
+            <p>Redesign logo</p>
+          </div>
+        </div>
+        
+        <div class="column blogs">
+          <div class="content">
+            <img src="blog-5.png" alt="blog" style="width:100%">
+            <h4>Blog</h4>
+            <p>Client requirement</p>
+          </div>
+        </div>
+        <div class="column blogs">
+          <div class="content">
+          <img src="blog-31.png" alt="blog" style="width:100%">
+            <h4>Blog</h4>
+            <p>Client requirement</p>
+          </div>
+        </div>
+        <div class="column blogs">
+          <div class="content">
+          <img src="blog-26.png" alt="blog" style="width:100%">
+            <h4>Blog</h4>
+            <p>Client requirement</p>
+          </div>
+        </div>
+        <div class="column blogs">
+          <div class="content">
+            <img src="blog-12.gif" alt="blog" style="width:100%">
+            <h4>Blog</h4>
+            <p>Client requirement</p>
+          </div>
+        </div>
+        <div class="column blogs">
+          <div class="content">
+          <img src="blog-6.1.png" alt="blog" style="width:100%">
+            <h4>Blog</h4>
+            <p>Client requirement</p>
+          </div>
+        </div>
+        <div class="column blogs">
+          <div class="content">
+          <img src="blog-4.gif" alt="blog" style="width:100%">
+            <h4>Blog</h4>
+            <p>Client requirement</p>
+          </div>
+        </div>
+      
+      
+        <div class="column vectors">
+          <div class="content">
+            <img src="brocklesnar.png" alt="vector" style="width:100%">
+            <h4>Brock Lesner</h4>
+            <p>Brock Lesner</p>
+          </div>
+        </div>
+        <div class="column vectors">
+          <div class="content">
+          <img src="joker.png" alt="vector" style="width:100%">
+            <h4>JOKER</h4>
+            <p>Joker Vector</p>
+          </div>
+        </div>
+        <div class="column vectors">
+          <div class="content">
+          <img src="seth-rollins_2.png" alt="vector" style="width:100%">
+            <h4>Seth Rollins</h4>
+            <p>WWE Superstar Seth Rollins</p>
+          </div>
+        </div>
+        <div class="column vectors">
+          <div class="content">
+            <img src="dark_knight_2.png" alt="vector" style="width:100%">
+            <h4>Dark Knight</h4>
+            <p>Dark knight Vector</p>
+          </div>
+        </div>
+        <div class="column vectors">
+          <div class="content">
+          <img src="hulk_4.png" alt="vector" style="width:100%">
+            <h4>HULK</h4>
+            <p>Hulk vector</p>
+          </div>
+        </div>
+        <div class="column vectors">
+          <div class="content">
+          <img src="loki_4.png" alt="vector" style="width:100%">
+            <h4>LOKI</h4>
+            <p>Loki Vector</p>
+          </div>
+        </div>
+      <!-- END GRID -->
+      </div>
+      <!-- END MAIN -->
+      </div>
+      
+      <script>
+        //index.html
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("slide");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+// project.html
+filterSelection("Logos"); // Default filter when the page loads
+
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+    this.className += " active";
+  });
+}
+
+
+      </script>
+</body>
+</html>
