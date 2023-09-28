@@ -5,4 +5,10 @@
     "nodemailer": "^6.9.5",
     "path": "^0.12.7"
   }
+  {
+  "main": "nodemailer.js"
+  }
+"scripts":{
+"start": "node nodemailer.js"
+}
 }
