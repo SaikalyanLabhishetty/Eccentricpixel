@@ -17,6 +17,10 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html'); 
 });
 
+app.get('/index.html', (req, res) => {
+  res.sendFile(__dirname + '/index.html'); 
+});
+
 app.get('/project.html', (req, res) => {
     res.sendFile(__dirname + '/project.html'); 
 });
@@ -43,9 +47,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// app.get('/', (req, res) => {
-//   res.sendFile(__dirname + '/index.html');
-// });
+
 
 app.post('/sendEmail', (req, res) => {
   const { name, email, phone,design_type,date } = req.body;
