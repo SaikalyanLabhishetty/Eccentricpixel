@@ -13,7 +13,7 @@ app.use('/html',express.static(__dirname+'/public/html'))
 app.use(express.static('image'));
 
 // Define a route to serve your HTML files
-app.get('/index.html', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html'); 
 });
 
